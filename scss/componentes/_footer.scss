@@ -1,0 +1,36 @@
+footer{
+    background-color: map-get($footer, bg-c);
+    width:100% ;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+        img{
+            height: 80px; 
+        }
+        p{
+            color: map-get($footer,p);
+            text-align: right;   
+        }
+        .mapaFooter{
+            display: flex;
+            align-items: center;
+        } 
+        .logoFooter{
+            width: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logoFooter img{
+            height: 25vh;
+        
+        }
+        .contactoFooter{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: center;
+            padding-right: 20px;
+        }
+}

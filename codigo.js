@@ -32,3 +32,55 @@ if (validacion == false){
 if(validacion == true){
     alert("El codigo promocional es valido") 
 }
+
+
+function Productos(nombre, precio, foto) {
+    this.nombre = nombre;
+    this.precio = precio;
+    this.foto = foto;
+}
+
+const productosArray = []
+productosArray.push(producto1 = new Productos("Bicicleta Bmx Drb Highway", 180000, "https://http2.mlstatic.com/D_NQ_NP_927589-MLA50910922006_072022-F.webp")) 
+productosArray.push(producto1 = new Productos("Bicicleta Bmx Drb Highway 2", 75000, "https://http2.mlstatic.com/D_NQ_NP_927589-MLA50910922006_072022-F.webp")) 
+productosArray.push(producto1 = new Productos("Bicicleta Bmx Drb Highway 3", 48000, "https://http2.mlstatic.com/D_NQ_NP_927589-MLA50910922006_072022-F.webp")) 
+productosArray.push(producto1 = new Productos("Bicicleta Bmx Drb Highway 4", 250000, "https://http2.mlstatic.com/D_NQ_NP_927589-MLA50910922006_072022-F.webp")) 
+productosArray.push(producto1 = new Productos("Bicicleta Bmx Drb Highway 5", 750000, "https://http2.mlstatic.com/D_NQ_NP_927589-MLA50910922006_072022-F.webp")) 
+productosArray.push(producto1 = new Productos("Bicicleta Bmx Drb Highway 6", 98410, "https://http2.mlstatic.com/D_NQ_NP_927589-MLA50910922006_072022-F.webp")) 
+productosArray.push(producto1 = new Productos("Bicicleta Bmx Drb Highway 7", 99999, "https://http2.mlstatic.com/D_NQ_NP_927589-MLA50910922006_072022-F.webp")) 
+
+
+
+    let foo = productosArray.map(function(producto){
+        return 'div' +producto.nombre+' '+producto.precio+'div'
+    })
+    console.log(foo)
+    
+    function funcionLlamar(){
+        window.onload
+
+    }
+funcionLlamar()
+
+
+
+/*
+const precioMinimo = document.getElementById("precioMinimo")
+
+const precioMaximo = document.getElementById("precioMaximo")
+
+const lista = document.getElementById("tiendaProductos")
+
+const productos = lista.getElementById("dataset")
+
+function limites() {
+    const pminimo = parseFloat(precioMinimo.value) 
+    
+    const pmaximo = parseFloat(precioMaximo.value)
+    
+    for(let i = 0; i<productos.length; i++){
+        const precioProducto = parseFloat(productos[i].dataset.price)
+        console.log(precioProducto)
+    } 
+}
+limites()*/

@@ -64,7 +64,7 @@ funcionLlamar()
 
 
 
-/*
+
 const precioMinimo = document.getElementById("precioMinimo")
 
 const precioMaximo = document.getElementById("precioMaximo")
@@ -83,4 +83,4 @@ function limites() {
         console.log(precioProducto)
     } 
 }
-limites()*/
+limites()
